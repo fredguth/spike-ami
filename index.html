@@ -19,8 +19,11 @@ function checkIcon() {
       element = element.parentElement;
       var node = document.createElement('li');
       node.className = "icon icon-close group2";
-      node.onclick = function() {
-        console.log('click!');
+      node.onclick = function(evt) {
+        var flip = evt.srcElement.ownerDocument.getElementById('flipbook');
+        console.log(flip.getElementsByClassName('page-wrapper')[0].getAttribute('page'));
+        console.log(flip.getElementsByClassName('background')[0].style['background-image']);
+
       };
       element.appendChild(node);
       element.style.backgroundColor = "#FF0000";
@@ -32,9 +35,9 @@ function checkIcon() {
 
 </script>
 
-<body onload="checkIcon()">
+<body >
 
-<iframe id="magazine" src="./avon/HTML/index.html" frameborder="0" width="100%" height="100%"></iframe>
+<iframe id="magazine" src="./avon/HTML/index.html" frameborder="0" width="100%" height="100%" onload="checkIcon()"></iframe>
 
 </body>
 </html>
