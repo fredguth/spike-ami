@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Properties>
+  <bookProperties>
+    <cover>
+      <coverBorderColor value="#000000" />
+      <coverSize>
+        <width>
+          <pixelValue value="12" />
+        </width>
+        <height>
+          <pixelValue value="12" />
+        </height>
+      </coverSize>
+    </cover>
+    <pages>
+      <defaultValue>
+        <contentScale value="0.9875" />
+        <thumbFormat value="jpg" />
+        <width value="1580" />
+        <height value="1200" />
+        <zoomFormat value="swf" />
+        <format value="swf" />
+        <substrateFormat value="jpg" />
+        <substrateZoomFormat value="jpg" />
+        <textLayer value="true" />
+      </defaultValue>
+      <elements>
+        <page>
+          <thumbFormat value="png" />
+          <width value="790" />
+          <id value="1" />
+          <pdfFileSize value="188870" />
+        </page>
+        <page>
+          <wide value="true" />
+          <thumbFormat value="png" />
+          <id value="2" />
+          <pdfFileSize value="361090" />
+        </page>
+        <page>
+          <wide value="true" />
+          <thumbFormat value="png" />
+          <id value="3" />
+          <pdfFileSize value="431316" />
+        </page>
+        <page>
+          <wide value="true" />
+          <thumbFormat value="png" />
+          <id value="4" />
+          <pdfFileSize value="401944" />
+        </page>
+        <page>
+          <wide value="true" />
+          <thumbFormat value="png" />
+          <id value="5" />
+          <pdfFileSize value="434000" />
+        </page>
+        <page>
+          <wide value="true" />
+          <thumbFormat value="png" />
+          <id value="6" />
+          <pdfFileSize value="432311" />
+        </page>
+        <page>
+          <wide value="true" />
+          <thumbFormat value="png" />
+          <id value="7" />
+          <pdfFileSize value="503603" />
+        </page>
+        <page>
+          <wide value="true" />
+          <thumbFormat value="png" />
+          <id value="8" />
+          <pdfFileSize value="418688" />
+        </page>
+        <page>
+          <wide value="true" />
+          <thumbFormat value="png" />
+          <id value="9" />
+          <pdfFileSize value="383520" />
+        </page>
+        <page>
+          <wide value="true" />
+          <thumbFormat value="png" />
+          <id value="10" />
+          <pdfFileSize value="290177" />
+        </page>
+      </elements>
+    </pages>
+    <publicationName value="Avon-Folheto-Cosmeticos-7-2017" />
+    <pageTypeHelper value="RWWWWWWWWW" />
+    <flipCorner value="true" />
+    <searchIndex ext="search/searchtext.xml" />
+    <zoomedPageTransition value="1" />
+  </bookProperties>
+  <wrapProperties>
+    <textSelectionOpacity value="0.196078431372549" />
+    <projectType value="catalog" />
+    <stripe>
+      <stripeColor value="#FFFFFF" />
+      <stripeHeight>
+        <percentValue value="100" />
+      </stripeHeight>
+      <stripeArrowColor value="#000000" />
+      <stripeOpacityHover value="0.705882352941176" />
+      <stripeArrowOpacity value="0.584313725490196" />
+    </stripe>
+    <bevelFilter>
+      <blur value="0" />
+      <distance value="1" />
+      <enabled value="false" />
+    </bevelFilter>
+    <bookSize>
+      <percentValue value="95" />
+    </bookSize>
+    <linkRolloverColor value="#3FC7FF" />
+    <linkRolloverOpacity value="0.470588235294118" />
+    <bookProportions>
+      <width>
+        <pixelValue value="790" />
+      </width>
+      <height>
+        <pixelValue value="1200" />
+      </height>
+    </bookProportions>
+    <dropShadowFilter>
+      <blur value="2" />
+      <alpha value="0.247058823529412" />
+      <distance value="1" />
+      <angle value="90" />
+    </dropShadowFilter>
+    <textSelectionColor value="#000000" />
+  </wrapProperties>
+  <sound>
+    <background>
+      <music>
+        <SoundCollectionProperty>
+          <url value="" />
+        </SoundCollectionProperty>
+      </music>
+      <order value="1" />
+    </background>
+    <effects>
+      <volume value="25" />
+      <softFlipEffects>
+        <element>
+          <url value="sound/flip2.mp3" />
+          <volume value="100" />
+        </element>
+        <element>
+          <url value="sound/flip3.mp3" />
+          <volume value="100" />
+        </element>
+        <element>
+          <url value="sound/flip4.mp3" />
+          <volume value="100" />
+        </element>
+      </softFlipEffects>
+      <hardCoverStart>
+        <url value="sound/blow.mp3" />
+        <volume value="100" />
+      </hardCoverStart>
+    </effects>
+  </sound>
+  <tableOfContent>
+    <tocData>
+      <pageNumber value="-1" />
+    </tocData>
+  </tableOfContent>
+  <pdfFileProperties>
+    <fileSize value="3808172" />
+    <fileURL value="downloads/publication.pdf" />
+  </pdfFileProperties>
+  <skin>
+    <printButtonVisible value="false" />
+    <linkVisible value="false" />
+    <link>
+      <url value="http://flippingbook.com?src=1" />
+    </link>
+    <backgroundLogoPath value="" />
+  </skin>
+</Properties>

@@ -1,0 +1,334 @@
+﻿
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>Quick Start Guide</title>
+
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+    CURRENT_PAGE = "6";
+    MAIN_PAGE     = "index.html";
+    FILES_FOLDER  = "files";
+    HTML5_PUBLICATION = true;
+
+
+    
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        STATIC_FOLDER = ".";
+        DYNAMIC_FOLDER = "./..";
+
+        PUBLICATION_NAME = "Quick Start Guide";
+
+        CURRENT_VERSION = "2.8.16";
+
+        LANGS = ['en','ar','de','es','fi','fr','he','it','ja','nl','no','pl','pt','ru','sv','tr','zh'];
+        PUBLICATION_TYPE = "catalog";
+        VIDEOS_INFO = {};
+
+    var main = function () {
+
+        loadScript('./javascript/localizator.js',function(){});
+
+        if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+            var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname);
+            var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+            loadScript(url,function(){});
+        }
+
+    }
+
+    if (!!window.addEventListener) {
+        window.addEventListener('load', main);
+    } else {
+        window.attachEvent('onload', main);
+    }
+
+    function loadScript(url, callback){
+        var head = document.getElementsByTagName("head")[0];
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = url;
+        head.appendChild(script);
+        if (script.readyState){
+            script.onreadystatechange = function(){
+                if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+                    script.onreadystatechange = null;
+                    callback();
+                }
+            };
+        } else {
+            script.onload = function(){
+                callback();
+            };
+        }
+    }
+    </script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover, .contentItemHover:hover, .emptyImage:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#3FC7FF,endColorstr=#3FC7FF);
+	zoom:1;
+	
+	background:rgb(63,199,255);
+	background:rgba(63,199,255, 0.5);
+	
+
+        }
+
+
+
+    </style>
+</head>
+<body style="font-size: 20px; background-color: #ECF0F1;">
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.png" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+		    
+				<ul class="downloadButton toolbarLink">
+					<li class="iconLi">
+						<img class="iconToolbar" src="styles/save.png" alt="Downloads" />
+                        <img class="iconToolbar mobile" src="styles/save-mobile.png" alt="Downloads" />
+					</li>
+						<li id="downloadPdf" class="downloadSubMenu">
+							<a id="downloadPdfLink" href="./../common/downloads/publication.pdf" target="_blank"></a>
+						</li>
+										                    					
+				</ul>
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-5.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;6 / 10</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-7.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<span id="basicVersionTitle" class="basicInfoTitle"></span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+
+		<a class="mobileMenuButton" id="mobileMenuButton">
+            <img src="styles/mobile-menu.png" alt="Show Menu" style="" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-5.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">6 / 10</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-7.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 595px; height: 841px; margin: 40px 0 0 -297px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0006.jpg" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:5.112961%;left:7.058824%;width:10.252101%;height:2.378121%;font-size:0.800000em;color:#4D555D;font-family:Helvetica Neue;">
+							<b>PAGE 6</b>
+						</p>
+						<p class="textItem " style="top:10.701546%;left:7.058824%;width:55.294118%;height:3.448276%;font-size:1.200000em;color:#5C5C5C;font-family:Helvetica Neue;">
+							<b>Step 2: Select a suitable skin</b>
+						</p>
+						<p class="textItem testString" style="top:15.814507%;left:7.058824%;width:82.352941%;height:2.615933%;font-size:0.800000em;color:#5C5C5C;font-family:Open Sans;">
+							The appearance of your publication is determined by what we call
+						</p>
+						<p class="textItem " style="top:18.668252%;left:7.058824%;width:79.159664%;height:2.615933%;font-size:0.800000em;color:#5C5C5C;font-family:Open Sans;">
+							the ‘Skin’. A skin is a collection of all the graphical elements (like
+						</p>
+						<p class="textItem " style="top:21.521998%;left:7.058824%;width:81.344538%;height:2.615933%;font-size:0.800000em;color:#5C5C5C;font-family:Open Sans;">
+							colors, fonts, and background images) that together make up the
+						</p>
+						<p class="textItem " style="top:24.375743%;left:7.058824%;width:45.210084%;height:2.615933%;font-size:0.800000em;color:#5C5C5C;font-family:Open Sans;">
+							User Interface for your publications.
+						</p>
+						<p class="textItem " style="top:28.656361%;left:7.058824%;width:84.873950%;height:2.615933%;font-size:0.800000em;color:#5C5C5C;font-family:Open Sans;">
+							FlippingBook Publisher comes with 24 professionally designed skins
+						</p>
+						<p class="textItem " style="top:31.510107%;left:7.058824%;width:81.344538%;height:2.615933%;font-size:0.800000em;color:#5C5C5C;font-family:Open Sans;">
+							by default. These skins give a coherent look to all the elements in
+						</p>
+						<p class="textItem " style="top:34.363853%;left:7.058824%;width:21.176471%;height:2.615933%;font-size:0.800000em;color:#5C5C5C;font-family:Open Sans;">
+							your publication.
+						</p>
+						<p class="textItem testString" style="top:40.071344%;left:7.058824%;width:32.773109%;height:2.615933%;font-size:0.800000em;color:#5C5C5C;font-family:Open Sans;">
+							<b>Steps to change the skin</b>
+						</p>
+						<p class="textItem " style="top:44.351962%;left:13.277311%;width:11.764706%;height:2.615933%;font-size:0.800000em;color:#5C5C5C;font-family:Open Sans;">
+							Go to the
+						</p>
+						<p class="textItem " style="top:44.351962%;left:25.546218%;width:14.117647%;height:2.615933%;font-size:0.800000em;color:#5C5C5C;font-family:Open Sans;">
+							<b>Properties</b>
+						</p>
+						<p class="textItem " style="top:44.351962%;left:40.336134%;width:7.058824%;height:2.615933%;font-size:0.800000em;color:#5C5C5C;font-family:Open Sans;">
+							pane.
+						</p>
+						<p class="textItem " style="top:48.632580%;left:13.277311%;width:14.621849%;height:2.615933%;font-size:0.800000em;color:#5C5C5C;font-family:Open Sans;">
+							Click on the
+						</p>
+						<p class="textItem " style="top:48.632580%;left:28.403361%;width:14.621849%;height:2.615933%;font-size:0.800000em;color:#5C5C5C;font-family:Open Sans;">
+							<b>Select Skin</b>
+						</p>
+						<p class="textItem " style="top:48.632580%;left:43.697479%;width:9.243697%;height:2.615933%;font-size:0.800000em;color:#5C5C5C;font-family:Open Sans;">
+							button.
+						</p>
+						<p class="textItem " style="top:52.913199%;left:13.277311%;width:76.134454%;height:2.615933%;font-size:0.800000em;color:#5C5C5C;font-family:Open Sans;">
+							Choose a skin that goes well with your publication by clicking
+						</p>
+						<p class="textItem " style="top:55.766944%;left:13.277311%;width:32.436975%;height:2.615933%;font-size:0.800000em;color:#5C5C5C;font-family:Open Sans;">
+							on the miniature preview.
+						</p>
+						<p class="textItem " style="top:61.474435%;left:7.058824%;width:77.815126%;height:2.615933%;font-size:0.800000em;color:#5C5C5C;font-family:Open Sans;">
+							The new skin will be automatically applied to your publication.
+						</p>
+						<p class="textItem " style="top:53.151011%;left:9.747899%;width:1.344538%;height:2.259215%;font-size:0.700000em;color:#FFFFFF;font-family:Open Sans;">
+							3
+						</p>
+						<p class="textItem " style="top:44.589774%;left:9.747899%;width:1.344538%;height:2.259215%;font-size:0.700000em;color:#FFFFFF;font-family:Open Sans;">
+							1
+						</p>
+						<p class="textItem " style="top:48.870392%;left:9.747899%;width:1.344538%;height:2.259215%;font-size:0.700000em;color:#FFFFFF;font-family:Open Sans;">
+							2
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-1.html">1</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-2.html">2</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-3.html">3</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-4.html">4</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-5.html">5</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink currPage" href="./page-6.html">6</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-7.html">7</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-8.html">8</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-9.html">9</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-10.html">10</a>
+
+				<a style="color:#3E3E43;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+	        if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+	            BASIC_PAGE = new BasicPage();
+	        }
+	        GALLERY_CONTENT = {};
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
