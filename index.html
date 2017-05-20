@@ -16,8 +16,15 @@ function checkIcon() {
     // Get a handle to the iframe element
     var element = $('#magazine')[0].contentDocument.getElementById('download');
     if (element) {
+      element = element.parentElement;
+      var node = document.createElement('li');
+      node.className = "icon icon-close group2";
+      node.onclick = function() {
+        console.log('click!');
+      };
+      element.appendChild(node);
       element.style.backgroundColor = "#FF0000";
-      element.className = "icon icon-close group2";
+      //element.className = "icon icon-close group2";
       return;
     }
     window.setTimeout('checkIcon();', 200);
