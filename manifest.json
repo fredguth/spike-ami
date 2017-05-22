@@ -1,0 +1,16 @@
+
+{
+  "lang": "pt-br",
+  "orientation": "portrait",
+  "background_color": "#333333",
+  "name": "Fred Guth Natura",
+  "short_name": "Natura",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "https://secure.gravatar.com/avatar/6431cfce30d126e78b77e4a10cab5b7e?s=144",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+}
