@@ -1,0 +1,22 @@
+Ambiente
+√ ver o bd e como mexer nele
+
+Notificação
+- identificação do usuário na web-app
+-- onload checa se a pessoa está identificada com variável
+-- uma vez cadastrada, ao clicar em "Ok", chama REST POST que cadastra a pessoa
+-- fazer o endpoint que cadastra o nome
+
+ProgressiveWeb
+√ mostrar para o Facundo o spike funcionando
+- gerar um catálogo com configurações certas
+- testar spike mobile
+- testar a ideia de um manifest.json
+
+
+
+
+Business
+- gerar estatísticas mais detalhadas a partir do bd
+- automatizar a checagem de urls de novas revistas
+
